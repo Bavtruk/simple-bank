@@ -17,13 +17,17 @@ while True:
     choice = input("Enter your choice (1-4): ")
 
     if choice == '1':
-        # papildini kodu šeit
+        balance = balance + int(input("How much do you want to deposite?Enter ammount:"))
+        if (balance<=0):
+            print("Invalid value,make a different choise")
         pass
     elif choice == '2':
-        # papildini kodu šeit
+        balance = balance - int(input("How much do you want to withdraw?Enter ammount:"))
+        if (balance<=0):
+            print("Invalid value,make a different choise")
         pass
     elif choice == '3':
-        # papildini kodu šeit
+        print("Your balance", balance)
         pass
     elif choice == '4':
         print("Exiting the banking system. Thank you!")
